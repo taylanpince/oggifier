@@ -5,6 +5,12 @@
       <link>http://appcast.taylanpince.com/updates.xml</link>
       <description>Most recent changes to Oggifier with update links</description>
       <language>en</language>
+          <item>
+             <title>Version 0.2.1</title>
+    			<sparkle:releaseNotesLink>http://appcast.taylanpince.com/oggifier/0.2.1.html</sparkle:releaseNotesLink>
+             <pubDate>Fri, 03 Jul 2009 18:35:11 +0000</pubDate>
+             <enclosure url="http://appcast.taylanpince.com/oggifier/Oggifier.0.2.1.zip" sparkle:version="0.2.1" length="4384010" type="application/octet-stream" sparkle:dsaSignature="MC0CFEyMi3eaWZMNY8D3wf/8+AcWRcZJAhUAhKm+Q3KcwmWsbPbSwybGPt07IQs=" />
+          </item>
          <item>
             <title>Version 0.2.0</title>
 			<sparkle:releaseNotesLink>http://appcast.taylanpince.com/oggifier/0.2.0.html</sparkle:releaseNotesLink>
