@@ -1,0 +1,233 @@
+FFMPEG2THEORA(1)                                              FFMPEG2THEORA(1)
+
+
+
+NAME
+       ffmpeg2theora  -  command-line  converter  to create Ogg Theora and Ogg
+       Vorbis files.
+
+SYNOPSIS
+       ffmpeg2theora [options] inputfile
+
+DESCRIPTION
+       This manual page documents briefly the ffmpeg2theora command.
+
+       ffmpeg2theora is a program that converts any media file that ffmpeg can
+       decode to Ogg Theora for video and Ogg Vorbis for audio.
+
+OPTIONS
+       To read from standard input, specify `-' as the input filename.
+
+       These  programs  follow  the  usual  GNU command line syntax, with long
+       options starting with two  dashes  (`-').   A  summary  of  options  is
+       included below.
+
+   General output options:
+       -o, --output
+              Specify  the  output  filename.  If no output filename is speci-
+              fied, output will be written to  inputfile.ogv.   To  output  to
+              standard output, specify /dev/stdout as the output file.
+
+       --no-skeleton
+              Disables Ogg Skeleton metadata output.
+
+       -s, --starttime
+              Start encoding at this time (in seconds).
+
+       -e, --endtime
+              End encoding at this time (in seconds).
+
+       -p, --v2v-preset
+              Encode  file  with v2v preset.  Right now, there is preview, pro
+              and videobin.  Run "ffmpeg2theora -p info" for more information.
+
+   Video output options:
+       -v, --videoquality
+              [0 to 10] Set encoding quality for video (default: 5).
+                        use higher values for better quality
+
+       -V, --videobitrate
+              [1 to 16778] Set encoding bitrate for video (in kb/s).
+
+       --optimize
+              Optimize  output  Theora  video,  using a full search for motion
+              vectors instead of a hierarchical one.  This  can  reduce  video
+              bitrate  about 5%, but it is slower and therefore is disabled by
+              default.
+
+       --speedlevel
+              [0 2] encoding is faster with higher values the cost is  quality
+              and bandwidth
+
+       -x, --width
+              Scale to given width (in pixels).
+
+       -y, --height
+              Scale to given height (in pixels).
+
+       --aspect
+              Define frame aspect ratio (e.g. 4:3, 16:9).
+
+       -F, --framerate
+              output framerate e.g 25:2 or 16
+
+       --croptop, --cropbottom, --cropleft, --cropright
+              Crop input by given pixels before resizing.
+
+       -S, --sharpness
+              [0  to  2] Sharpness of images (default: 2).  Note: lower values
+              make the video sharper.
+
+       -K, --keyint
+              [8 to 65536] Set keyframe interval (default: 64).
+
+   Video transfer options:
+       --pp   Video Postprocessing, denoise, deblock,  deinterlacer  use  --pp
+              help for a list of available filters.
+
+       -C, --contrast
+              [0.1  to  10.0]  contrast correction (default: 1.0). Note: lower
+              values make the video darker.
+
+       -B, --brightness
+              [-1.0 to 1.0] brightness correction (default: 0.0). Note:  lower
+              values make the video darker.
+
+       -G, --gamma
+              [0.1  to 10.0] gamma correction (default: 1.0). Note: lower val-
+              ues make the video darker.
+
+       -P, --saturation
+              [0.1 to 10.0] saturation correction (default: 1.0). Note:  lower
+              values make the video grey.
+
+   Audio output options:
+       -a, --audioquality
+              [-2 to 10] Set encoding quality for audio (default: 1).
+                         use higher values for better quality
+
+       -A, --audiobitrate
+              [32 to 500] Set encoding bitrate for audio (in kb/s).
+
+       -c, --channels
+              Set number of output channels.
+
+       -H, --samplerate
+              Set output samplerate (in Hz).
+
+       --nosound
+              Disable the sound from input.
+
+   Input options:
+       --deinterlace
+              Force deinterlace.  Otherwise only material marked as interlaced
+              will be deinterlaced.
+
+       --vhook
+              you can use ffmpeg's vhook system, example:
+               ffmpeg2theora --vhook '/path/watermark.so -f wm.gif' input.dv
+
+       -f, --format
+              Specify input format.
+
+       --v4l /dev/video0
+              read data from v4l device /dev/video0, you have  to  specify  an
+              output file with -o.
+
+       --inputfps
+              Override input fps.
+
+       --audiostream id
+              By default the last audio stream is selected, use this to select
+              another audio stream.
+
+       --sync Use A/V sync from input container. Since this does not work with
+              all  input  format  you  have  to  manualy enable it if you have
+              issues with A/V sync.
+
+   Subtitles options:
+       --subtitles
+              Encode subtitles from the  given  file  to  a  multiplexed  Kate
+              stream.   The  input  file  should  be  in SubRip (.srt) format,
+              encoded in utf-8, unless the --subtitles-encoding option is also
+              given.
+
+       --subtitles-encoding encoding
+              Assumes the corresponding subtitles file is encoded in the given
+              encoding (utf-8 and iso-8859-1 (aka latin1) are supported).
+
+       --subtitles-language language
+              Sets the language of the corresponding  subtitles  stream.  This
+              will  be  set in the corresponding Kate stream so a video player
+              may make this available to the user for language selection.
+
+       --subtitles-category category
+              Sets the category of the corresponding  subtitles  stream.  This
+              will  be  set in the corresponding Kate stream so a video player
+              may make this available to the user for selection.  The  default
+              category  is "subtitles". Suggested other categories may include
+              "transcript", "commentary", "lyrics", etc.
+
+   Metadata options:
+       --artist
+              Name of artist (director).
+
+       --title
+              Title.
+
+       --date Date.
+
+       --location
+              Location.
+
+       --organization
+              Name of organization (studio).
+
+       --copyright
+              Copyright.
+
+       --license
+              License.
+
+       --contact
+              Contact link.
+
+   Other options:
+       --nice n
+              Set niceness to n.
+
+       -h, --help
+              Output a help message.
+
+EXAMPLES
+       Encode Videos:
+         ffmpeg2theora videoclip.avi (will write output to videoclip.ogv)
+
+         cat something.dv | ffmpeg2theora -f dv -o output.ogv -
+
+       Encode a series of images:
+         ffmpeg2theora -f image2 frame%06d.png -o output.ogv
+
+       Live streaming from V4L Device:
+         ffmpeg2theora --v4l /dev/video0 --inputfps 15 -x 160 -y 128 -o - \
+           | oggfwd iccast2server 8000 password /theora.ogv
+
+       Live encoding from a DV camcorder (needs a fast machine):
+         dvgrab - | ffmpeg2theora -f dv -x 352 -y 288 -o output.ogv -0
+
+       Live encoding and streaming to icecast server:
+         dvgrab --format raw - \
+           | ffmpeg2theora -f dv -x 160 -y 128 -o /dev/stdout - \
+           | oggfwd iccast2server 8000 password /theora.ogv
+
+
+
+AUTHOR
+       ffmpeg2theora was written by jan gerber <j@v2v.cc>.
+
+       This manual page was written by Hubert Chan <hubert@uhoreg.ca>, for the
+       Debian project (but may be used by others).
+
+
+
+                               December 30, 2005              FFMPEG2THEORA(1)
