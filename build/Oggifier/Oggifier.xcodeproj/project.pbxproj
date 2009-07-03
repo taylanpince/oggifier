@@ -12,9 +12,25 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		ECBDA4320FFE419E00542CBD /* ffmpeg2theora in Resources */ = {isa = PBXBuildFile; fileRef = ECBDA4310FFE419E00542CBD /* ffmpeg2theora */; };
+		ECBDA4E50FFE624E00542CBD /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBDA4E40FFE624E00542CBD /* Sparkle.framework */; };
+		ECBDA4F40FFE630000542CBD /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECBDA4E40FFE624E00542CBD /* Sparkle.framework */; };
+		ECBDA4F90FFE664C00542CBD /* dsa.pub in Resources */ = {isa = PBXBuildFile; fileRef = ECBDA4F80FFE664C00542CBD /* dsa.pub */; };
 		ECDE5FA10FFDA86900A6B1D4 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */; };
 		ECF54D610FFE02210066796F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF54D600FFE02210066796F /* AppDelegate.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		ECBDA4F20FFE626D00542CBD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				ECBDA4F40FFE630000542CBD /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -28,6 +44,8 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Oggifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oggifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECBDA4310FFE419E00542CBD /* ffmpeg2theora */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = ffmpeg2theora; sourceTree = "<group>"; };
+		ECBDA4E40FFE624E00542CBD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		ECBDA4F80FFE664C00542CBD /* dsa.pub */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa.pub; sourceTree = "<group>"; };
 		ECDE5F9F0FFDA86900A6B1D4 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		ECF54D5F0FFE02210066796F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +58,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				ECBDA4E50FFE624E00542CBD /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +79,7 @@
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				ECBDA4E40FFE624E00542CBD /* Sparkle.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
 			name = "Linked Frameworks";
@@ -107,6 +127,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECBDA4F80FFE664C00542CBD /* dsa.pub */,
 				ECBDA4310FFE419E00542CBD /* ffmpeg2theora */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -134,6 +155,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				ECBDA4F20FFE626D00542CBD /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -170,6 +192,7 @@
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				ECBDA4320FFE419E00542CBD /* ffmpeg2theora in Resources */,
+				ECBDA4F90FFE664C00542CBD /* dsa.pub in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +236,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -230,6 +257,10 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = Oggifier_Prefix.pch;

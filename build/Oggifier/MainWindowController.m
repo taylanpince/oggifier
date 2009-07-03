@@ -99,10 +99,9 @@
 	if (range.location != NSNotFound) {
 		[statusLabel setTitleWithMnemonic:[[status substringFromIndex:range.location] capitalizedString]];
 	} else {
-		[statusLabel setTitleWithMnemonic:@"Calculating..."];
+		[statusLabel setTitleWithMnemonic:@"Calculating…"];
 	}
 
-	
 	[status release];
 }
 
@@ -153,7 +152,8 @@
 	[cancelButton setHidden:YES];
 	[progressIndicator setHidden:YES];
 	[progressIndicator stopAnimation:self];
-	[statusLabel setTitleWithMnemonic:@"Done"];
+	
+	[statusLabel setTitleWithMnemonic:@"Done!"];
 }
 
 - (IBAction)cancelConversion:(id)sender {
