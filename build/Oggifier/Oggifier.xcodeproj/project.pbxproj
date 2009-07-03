@@ -16,6 +16,7 @@
 		ECBDA4F40FFE630000542CBD /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = ECBDA4E40FFE624E00542CBD /* Sparkle.framework */; };
 		ECBDA5D40FFEA0DC00542CBD /* Icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = ECBDA5D30FFEA0DC00542CBD /* Icon.icns */; };
 		ECBDA6880FFEB4B900542CBD /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = ECBDA6870FFEB4B900542CBD /* dsa_pub.pem */; };
+		ECCB74AA0FFEBE3E004B59C7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = ECCB74A90FFEBE3E004B59C7 /* Credits.html */; };
 		ECDE5FA10FFDA86900A6B1D4 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */; };
 		ECF54D610FFE02210066796F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ECF54D600FFE02210066796F /* AppDelegate.m */; };
 /* End PBXBuildFile section */
@@ -48,6 +49,7 @@
 		ECBDA4E40FFE624E00542CBD /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		ECBDA5D30FFEA0DC00542CBD /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
 		ECBDA6870FFEB4B900542CBD /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		ECCB74A90FFEBE3E004B59C7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		ECDE5F9F0FFDA86900A6B1D4 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
 		ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		ECF54D5F0FFE02210066796F /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				ECCB74A90FFEBE3E004B59C7 /* Credits.html */,
 				ECBDA6870FFEB4B900542CBD /* dsa_pub.pem */,
 				ECBDA5D30FFEA0DC00542CBD /* Icon.icns */,
 				ECBDA4310FFE419E00542CBD /* ffmpeg2theora */,
@@ -197,6 +200,7 @@
 				ECBDA4320FFE419E00542CBD /* ffmpeg2theora in Resources */,
 				ECBDA5D40FFEA0DC00542CBD /* Icon.icns in Resources */,
 				ECBDA6880FFEB4B900542CBD /* dsa_pub.pem in Resources */,
+				ECCB74AA0FFEBE3E004B59C7 /* Credits.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
