@@ -419,6 +419,7 @@
 			ECBDA67F0FFEB1F400542CBD /* PlistBookmark */ = ECBDA67F0FFEB1F400542CBD /* PlistBookmark */;
 			ECBDA6800FFEB1F400542CBD /* PBXTextBookmark */ = ECBDA6800FFEB1F400542CBD /* PBXTextBookmark */;
 			ECBDA6810FFEB1F400542CBD /* PlistBookmark */ = ECBDA6810FFEB1F400542CBD /* PlistBookmark */;
+			ECBDA6840FFEB33300542CBD /* PlistBookmark */ = ECBDA6840FFEB33300542CBD /* PlistBookmark */;
 			ECF54D500FFDFEA10066796F = ECF54D500FFDFEA10066796F /* PBXTextBookmark */;
 			ECF54D510FFDFEA10066796F = ECF54D510FFDFEA10066796F /* PBXTextBookmark */;
 			ECF54D650FFE027C0066796F = ECF54D650FFE027C0066796F /* PBXTextBookmark */;
@@ -3856,6 +3857,18 @@
 		vrLoc = 1192;
 	};
 	ECBDA6810FFEB1F400542CBD /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSMainNibFile,
+		);
+		name = /Users/taylan/Documents/Development/Personal/oggifier/build/Oggifier/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
+	ECBDA6840FFEB33300542CBD /* PlistBookmark */ = {
 		isa = PlistBookmark;
 		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
 		fallbackIsa = PBXBookmark;
