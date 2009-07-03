@@ -7,11 +7,20 @@
 //
 
 #import "AppDelegate.h"
+#import "MainWindowController.h"
 
 
 @implementation AppDelegate
 
+@synthesize windowController;
+
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication {
+	return YES;
+}
+
+- (BOOL)application:(NSApplication *)sender openFile:(NSString *)path {
+	[windowController assignSourcePath:path];
+	
 	return YES;
 }
 

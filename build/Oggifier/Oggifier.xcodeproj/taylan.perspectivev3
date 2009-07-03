@@ -230,8 +230,6 @@
 			<key>Layout</key>
 			<array>
 				<dict>
-					<key>BecomeActive</key>
-					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -281,8 +279,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>23</integer>
-									<integer>22</integer>
+									<integer>11</integer>
+									<integer>7</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -332,16 +330,17 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>ECBDA5E00FFEA1BE00542CBD</string>
+										<string>ECBDA6810FFEB1F400542CBD</string>
 										<key>history</key>
 										<array>
-											<string>ECF54D650FFE027C0066796F</string>
-											<string>ECF54D780FFE03490066796F</string>
-											<string>ECBDA58F0FFE8CE600542CBD</string>
-											<string>ECBDA5CD0FFE9DA100542CBD</string>
-											<string>ECBDA5D90FFEA10400542CBD</string>
 											<string>ECBDA5DA0FFEA10400542CBD</string>
-											<string>ECBDA5DB0FFEA10400542CBD</string>
+											<string>ECBDA6160FFEA7EB00542CBD</string>
+											<string>ECBDA6180FFEA7EB00542CBD</string>
+											<string>ECBDA6190FFEA7EB00542CBD</string>
+											<string>ECBDA61A0FFEA7EB00542CBD</string>
+											<string>ECBDA6660FFEB07C00542CBD</string>
+											<string>ECBDA67E0FFEB1F400542CBD</string>
+											<string>ECBDA67F0FFEB1F400542CBD</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -374,6 +373,31 @@
 											<string>ECBDA5DC0FFEA10400542CBD</string>
 											<string>ECBDA5DD0FFEA10400542CBD</string>
 											<string>ECBDA5DE0FFEA10400542CBD</string>
+											<string>ECBDA5F20FFEA5C000542CBD</string>
+											<string>ECBDA5F30FFEA5C000542CBD</string>
+											<string>ECBDA5F40FFEA5C000542CBD</string>
+											<string>ECBDA5F50FFEA5C000542CBD</string>
+											<string>ECBDA5F60FFEA5C000542CBD</string>
+											<string>ECBDA5F70FFEA5C000542CBD</string>
+											<string>ECBDA5F80FFEA5C000542CBD</string>
+											<string>ECBDA6080FFEA67F00542CBD</string>
+											<string>ECBDA6090FFEA67F00542CBD</string>
+											<string>ECBDA60A0FFEA67F00542CBD</string>
+											<string>ECBDA60B0FFEA67F00542CBD</string>
+											<string>ECBDA60C0FFEA67F00542CBD</string>
+											<string>ECBDA60D0FFEA67F00542CBD</string>
+											<string>ECBDA60E0FFEA67F00542CBD</string>
+											<string>ECBDA60F0FFEA67F00542CBD</string>
+											<string>ECBDA61C0FFEA7EB00542CBD</string>
+											<string>ECBDA61D0FFEA7EB00542CBD</string>
+											<string>ECBDA61E0FFEA7EB00542CBD</string>
+											<string>ECBDA61F0FFEA7EB00542CBD</string>
+											<string>ECBDA6200FFEA7EB00542CBD</string>
+											<string>ECBDA6210FFEA7EB00542CBD</string>
+											<string>ECBDA6220FFEA7EB00542CBD</string>
+											<string>ECBDA6230FFEA7EB00542CBD</string>
+											<string>ECBDA6680FFEB07C00542CBD</string>
+											<string>ECBDA6800FFEB1F400542CBD</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -684,6 +708,8 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>ECBDA6580FFEAD2600542CBD</string>
+		<string>ECBDA6590FFEAD2600542CBD</string>
 		<string>/Users/taylan/Documents/Development/Personal/oggifier/build/Oggifier/Oggifier.xcodeproj</string>
 	</array>
 	<key>WindowString</key>

@@ -34,6 +34,11 @@
     return frame;
 }
 
+- (void)assignSourcePath:(NSString *)path {
+	[sourcePath setURL:[NSURL URLWithString:path]];
+	[self chooseOutputPath:nil];
+}
+
 - (void)openPanelDidEnd:(NSOpenPanel*)panel returnCode:(int)returnCode contextInfo:(void *)contextInfo {
 	[panel orderOut:self];
 	
@@ -50,7 +55,7 @@
 - (IBAction)chooseSourcePath:(id)sender {
 	NSOpenPanel *panel = [NSOpenPanel openPanel];
 	
-	[panel setAllowedFileTypes:[NSArray arrayWithObject:@"m4v"]];
+	[panel setAllowedFileTypes:[NSArray arrayWithObjects:@"m4v", @"dv", nil]];
 	[panel setAllowsMultipleSelection:NO];
 	[panel setCanChooseDirectories:NO];
 	[panel setCanChooseFiles:YES];
@@ -80,13 +85,22 @@
 - (IBAction)chooseOutputPath:(id)sender {
 	NSSavePanel *panel = [NSSavePanel savePanel];
 	
+	NSString *directory = nil;
+	NSString *file = nil;
+	
+	if ([sourcePath URL]) {
+		directory = [[[sourcePath URL] absoluteString] stringByDeletingLastPathComponent];
+		file = [[[[sourcePath URL] absoluteString] lastPathComponent] stringByDeletingPathExtension];
+	}
+	
+	[panel setNameFieldLabel:@"Test"];
 	[panel setAllowedFileTypes:[NSArray arrayWithObject:@"ogv"]];
 	[panel setCanSelectHiddenExtension:YES];
 	[panel setCanCreateDirectories:YES];
 	[panel setTitle:@"Select a destination for the output file"];
 	[panel setPrompt:@"Save"];
 	
-	[panel beginSheetForDirectory:nil file:nil modalForWindow:[self window] 
+	[panel beginSheetForDirectory:directory file:file modalForWindow:[self window] 
 					modalDelegate:self 
 				    didEndSelector:@selector(savePanelDidEnd:returnCode:contextInfo:) 
 					contextInfo:self];

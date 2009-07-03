@@ -32,5 +32,6 @@
 - (IBAction)chooseOutputPath:(id)sender;
 - (IBAction)startConversion:(id)sender;
 - (IBAction)cancelConversion:(id)sender;
+- (void)assignSourcePath:(NSString *)path;
 
 @end
