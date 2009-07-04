@@ -8,7 +8,7 @@
 		<string key="IBDocument.HIToolboxVersion">353.00</string>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="497"/>
+			<integer value="530"/>
 			<integer value="57"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
@@ -785,6 +785,11 @@
 												<object class="NSArray" key="NSAllowedTypes">
 													<bool key="EncodedWithXMLCoder">YES</bool>
 													<string>m4v</string>
+													<string>dv</string>
+													<string>mov</string>
+													<string>mp4</string>
+													<string>3g2</string>
+													<string>m2v</string>
 												</object>
 											</object>
 										</object>
@@ -2511,6 +2516,11 @@
 					<object class="NSMutableArray">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<string>m4v</string>
+						<string>dv</string>
+						<string>mov</string>
+						<string>mp4</string>
+						<string>3g2</string>
+						<string>m2v</string>
 					</object>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>

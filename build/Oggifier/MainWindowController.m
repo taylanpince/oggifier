@@ -17,6 +17,7 @@
 	[cancelButton setHidden:YES];
 	[progressIndicator setHidden:YES];
 	[convertButton setEnabled:NO];
+	[sourcePath setDelegate:self];
 	[[self window] makeKeyAndOrderFront:self];
 }
 
@@ -34,6 +35,10 @@
     return frame;
 }
 
+- (void)updateOutputPath {
+	[outputPath setURL:[NSURL fileURLWithPath:[[[[sourcePath URL] path] stringByDeletingPathExtension] stringByAppendingPathExtension:@"ogv"]]];
+}
+
 - (void)assignSourcePath:(NSString *)path {
 	[sourcePath setURL:[NSURL fileURLWithPath:path]];
 	[self chooseOutputPath:nil];
@@ -47,15 +52,14 @@
 	
 	[sourcePath setURL:[[panel URLs] objectAtIndex:0]];
 	
-	if ([outputPath URL]) {
-		[convertButton setEnabled:YES];
-	}
+	[self updateOutputPath];
+	[convertButton setEnabled:YES];
 }
 
 - (IBAction)chooseSourcePath:(id)sender {
 	NSOpenPanel *panel = [NSOpenPanel openPanel];
 	
-	[panel setAllowedFileTypes:[NSArray arrayWithObjects:@"m4v", @"dv", @"mov", @"mp4", @"3g2", nil]];
+	[panel setAllowedFileTypes:[NSArray arrayWithObjects:@"m4v", @"dv", @"mov", @"mp4", @"3g2", @"m2v", nil]];
 	[panel setAllowsMultipleSelection:NO];
 	[panel setCanChooseDirectories:NO];
 	[panel setCanChooseFiles:YES];
