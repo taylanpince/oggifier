@@ -35,7 +35,7 @@
 }
 
 - (void)assignSourcePath:(NSString *)path {
-	[sourcePath setURL:[NSURL URLWithString:path]];
+	[sourcePath setURL:[NSURL fileURLWithPath:path]];
 	[self chooseOutputPath:nil];
 }
 
@@ -55,7 +55,7 @@
 - (IBAction)chooseSourcePath:(id)sender {
 	NSOpenPanel *panel = [NSOpenPanel openPanel];
 	
-	[panel setAllowedFileTypes:[NSArray arrayWithObjects:@"m4v", @"dv", nil]];
+	[panel setAllowedFileTypes:[NSArray arrayWithObjects:@"m4v", @"dv", @"mov", @"mp4", @"3g2", nil]];
 	[panel setAllowsMultipleSelection:NO];
 	[panel setCanChooseDirectories:NO];
 	[panel setCanChooseFiles:YES];
@@ -89,11 +89,10 @@
 	NSString *file = nil;
 	
 	if ([sourcePath URL]) {
-		directory = [[[sourcePath URL] absoluteString] stringByDeletingLastPathComponent];
-		file = [[[[sourcePath URL] absoluteString] lastPathComponent] stringByDeletingPathExtension];
+		directory = [[[sourcePath URL] path] stringByDeletingLastPathComponent];
+		file = [[[[sourcePath URL] path] lastPathComponent] stringByDeletingPathExtension];
 	}
 	
-	[panel setNameFieldLabel:@"Test"];
 	[panel setAllowedFileTypes:[NSArray arrayWithObject:@"ogv"]];
 	[panel setCanSelectHiddenExtension:YES];
 	[panel setCanCreateDirectories:YES];
