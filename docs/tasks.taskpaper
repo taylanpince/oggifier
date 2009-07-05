@@ -1,0 +1,6 @@
+Oggifier Tasks:
+- Add Preferences pane:
+	- Support automated conversion
+	- Optionally quit after finishing conversion
+	- Optionally prompt user for path after a source is selected
+- Add support for advanced options

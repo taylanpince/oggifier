@@ -17,7 +17,7 @@
 	[cancelButton setHidden:YES];
 	[progressIndicator setHidden:YES];
 	[convertButton setEnabled:NO];
-	[sourcePath setDelegate:self];
+	[sourcePath setSubDelegate:self];
 	[[self window] makeKeyAndOrderFront:self];
 }
 
@@ -42,6 +42,10 @@
 
 - (void)assignSourcePath:(NSString *)path {
 	[sourcePath setURL:[NSURL fileURLWithPath:path]];
+	[self updateOutputPath];
+}
+
+- (void)didChangePathControl:(PathControl *)control toURL:(NSURL *)url {
 	[self updateOutputPath];
 }
 

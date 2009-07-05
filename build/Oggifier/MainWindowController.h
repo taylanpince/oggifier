@@ -7,10 +7,11 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "PathControl.h"
 
 
-@interface MainWindowController : NSWindowController <NSPathControlDelegate> {
-	IBOutlet NSPathControl *sourcePath;
+@interface MainWindowController : NSWindowController <PathControlDelegate> {
+	IBOutlet PathControl *sourcePath;
 	IBOutlet NSPathControl *outputPath;
 	IBOutlet NSProgressIndicator *progressIndicator;
 	IBOutlet NSButton *convertButton;
@@ -20,7 +21,7 @@
 	BOOL cancelled;
 }
 
-@property (nonatomic, retain) IBOutlet NSPathControl *sourcePath;
+@property (nonatomic, retain) IBOutlet PathControl *sourcePath;
 @property (nonatomic, retain) IBOutlet NSPathControl *outputPath;
 @property (nonatomic, retain) IBOutlet NSProgressIndicator *progressIndicator;
 @property (nonatomic, retain) IBOutlet NSButton *convertButton;

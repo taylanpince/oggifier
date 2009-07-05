@@ -281,8 +281,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>24</integer>
-									<integer>23</integer>
+									<integer>26</integer>
+									<integer>25</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>ECF54D380FFDFBF00066796F</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>Info.plist</string>
+								<string>MainWindowController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>ECF54D390FFDFBF00066796F</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>Info.plist</string>
+										<string>MainWindowController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EC2368131000272F00701B48</string>
+										<string>EC89597D10016FA70009E0DF</string>
 										<key>history</key>
 										<array>
 											<string>ECBDA6190FFEA7EB00542CBD</string>
@@ -340,9 +340,11 @@
 											<string>ECCB749F0FFEBD8D004B59C7</string>
 											<string>EC23673A0FFFFED800701B48</string>
 											<string>EC2367450FFFFF3300701B48</string>
-											<string>EC23680D1000272F00701B48</string>
-											<string>EC23680E1000272F00701B48</string>
-											<string>EC23680F1000272F00701B48</string>
+											<string>EC89595E10016F2A0009E0DF</string>
+											<string>EC89595F10016F2A0009E0DF</string>
+											<string>EC89596010016F2A0009E0DF</string>
+											<string>EC89596110016F2A0009E0DF</string>
+											<string>EC89597C10016FA30009E0DF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -354,20 +356,24 @@
 											<string>ECBDA50B0FFE6E4A00542CBD</string>
 											<string>ECBDA5DD0FFEA10400542CBD</string>
 											<string>ECBDA6910FFEB4F700542CBD</string>
-											<string>EC23673D0FFFFED800701B48</string>
-											<string>EC23673E0FFFFED800701B48</string>
-											<string>EC23673F0FFFFED800701B48</string>
-											<string>EC2367480FFFFF3300701B48</string>
-											<string>EC2367490FFFFF3300701B48</string>
-											<string>EC23675A1000003A00701B48</string>
-											<string>EC23675B1000003A00701B48</string>
-											<string>EC23679D100019CC00701B48</string>
-											<string>EC23679E100019CC00701B48</string>
-											<string>EC2367DF10001FB500701B48</string>
-											<string>EC2367E010001FB500701B48</string>
-											<string>EC2368101000272F00701B48</string>
-											<string>EC2368111000272F00701B48</string>
-											<string>EC2368121000272F00701B48</string>
+											<string>EC89596310016F2A0009E0DF</string>
+											<string>EC89596410016F2A0009E0DF</string>
+											<string>EC89596510016F2A0009E0DF</string>
+											<string>EC89596610016F2A0009E0DF</string>
+											<string>EC89596710016F2A0009E0DF</string>
+											<string>EC89596810016F2A0009E0DF</string>
+											<string>EC89596910016F2A0009E0DF</string>
+											<string>EC89596A10016F2A0009E0DF</string>
+											<string>EC89596B10016F2A0009E0DF</string>
+											<string>EC89596C10016F2A0009E0DF</string>
+											<string>EC89596D10016F2A0009E0DF</string>
+											<string>EC89596E10016F2A0009E0DF</string>
+											<string>EC89596F10016F2A0009E0DF</string>
+											<string>EC89597010016F2A0009E0DF</string>
+											<string>EC89597110016F2A0009E0DF</string>
+											<string>EC89597210016F2A0009E0DF</string>
+											<string>EC89597310016F2A0009E0DF</string>
+											<string>EC89597410016F2A0009E0DF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -490,11 +496,11 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>EC23671E0FFFFD9E00701B48</string>
+				<string>EC895934100163980009E0DF</string>
 				<string>1CA23ED40692098700951B8B</string>
-				<string>EC23671F0FFFFD9E00701B48</string>
+				<string>EC895935100163980009E0DF</string>
 				<string>ECF54D380FFDFBF00066796F</string>
-				<string>EC2367200FFFFD9E00701B48</string>
+				<string>EC895936100163980009E0DF</string>
 				<string>1CA23EDF0692099D00951B8B</string>
 				<string>1CA23EE00692099D00951B8B</string>
 				<string>1CA23EE10692099D00951B8B</string>
@@ -641,13 +647,13 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>EC2367240FFFFDAC00701B48</string>
+				<string>EC89597710016F2A0009E0DF</string>
 				<string>1CCC7628064C1048000F2A68</string>
 				<string>1CCC7629064C1048000F2A68</string>
-				<string>EC2367250FFFFDAC00701B48</string>
-				<string>EC2367260FFFFDAC00701B48</string>
-				<string>EC2367270FFFFDAC00701B48</string>
-				<string>EC2367280FFFFDAC00701B48</string>
+				<string>EC89597810016F2A0009E0DF</string>
+				<string>EC89597910016F2A0009E0DF</string>
+				<string>EC89597A10016F2A0009E0DF</string>
+				<string>EC89597B10016F2A0009E0DF</string>
 				<string>ECF54D380FFDFBF00066796F</string>
 			</array>
 			<key>ToolbarConfiguration</key>
