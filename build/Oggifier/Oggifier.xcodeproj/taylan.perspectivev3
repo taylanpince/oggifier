@@ -320,7 +320,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>ECF54D380FFDFBF00066796F</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainWindowController.m</string>
+								<string>Info.plist</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>ECF54D390FFDFBF00066796F</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainWindowController.m</string>
+										<string>Info.plist</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EC89597D10016FA70009E0DF</string>
+										<string>EC8959861001726B0009E0DF</string>
 										<key>history</key>
 										<array>
 											<string>ECBDA6190FFEA7EB00542CBD</string>
@@ -340,11 +340,11 @@
 											<string>ECCB749F0FFEBD8D004B59C7</string>
 											<string>EC23673A0FFFFED800701B48</string>
 											<string>EC2367450FFFFF3300701B48</string>
-											<string>EC89595E10016F2A0009E0DF</string>
 											<string>EC89595F10016F2A0009E0DF</string>
 											<string>EC89596010016F2A0009E0DF</string>
 											<string>EC89596110016F2A0009E0DF</string>
-											<string>EC89597C10016FA30009E0DF</string>
+											<string>EC8959831001726B0009E0DF</string>
+											<string>EC8959841001726B0009E0DF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -374,6 +374,7 @@
 											<string>EC89597210016F2A0009E0DF</string>
 											<string>EC89597310016F2A0009E0DF</string>
 											<string>EC89597410016F2A0009E0DF</string>
+											<string>EC8959851001726B0009E0DF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

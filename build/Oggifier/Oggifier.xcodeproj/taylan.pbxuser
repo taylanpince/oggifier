@@ -8,7 +8,7 @@
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = Release;
 		activeExecutable = ECDE5F8C0FFD9F0F00A6B1D4 /* Oggifier */;
 		activeTarget = 8D1107260486CEB800E47090 /* Oggifier */;
 		addToTargets = (
@@ -129,6 +129,10 @@
 			EC89597610016F2A0009E0DF /* PBXTextBookmark */ = EC89597610016F2A0009E0DF /* PBXTextBookmark */;
 			EC89597C10016FA30009E0DF /* PBXTextBookmark */ = EC89597C10016FA30009E0DF /* PBXTextBookmark */;
 			EC89597D10016FA70009E0DF /* PBXTextBookmark */ = EC89597D10016FA70009E0DF /* PBXTextBookmark */;
+			EC8959831001726B0009E0DF /* PBXTextBookmark */ = EC8959831001726B0009E0DF /* PBXTextBookmark */;
+			EC8959841001726B0009E0DF /* PlistBookmark */ = EC8959841001726B0009E0DF /* PlistBookmark */;
+			EC8959851001726B0009E0DF /* PBXTextBookmark */ = EC8959851001726B0009E0DF /* PBXTextBookmark */;
+			EC8959861001726B0009E0DF /* PlistBookmark */ = EC8959861001726B0009E0DF /* PlistBookmark */;
 			ECBDA5030FFE6C3700542CBD = ECBDA5030FFE6C3700542CBD /* PBXTextBookmark */;
 			ECBDA50B0FFE6E4A00542CBD = ECBDA50B0FFE6E4A00542CBD /* PlistBookmark */;
 			ECBDA5DD0FFEA10400542CBD = ECBDA5DD0FFEA10400542CBD /* PBXBookmark */;
@@ -672,6 +676,49 @@
 		vrLen = 752;
 		vrLoc = 949;
 	};
+	EC8959831001726B0009E0DF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */;
+		name = "MainWindowController.m: 45";
+		rLen = 0;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 801;
+		vrLoc = 949;
+	};
+	EC8959841001726B0009E0DF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			NSMainNibFile,
+		);
+		name = /Users/taylan/Documents/Development/Personal/oggifier/build/Oggifier/Info.plist;
+		rLen = 8;
+		rLoc = 0;
+	};
+	EC8959851001726B0009E0DF /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */;
+		name = "MainWindowController.m: 45";
+		rLen = 0;
+		rLoc = 1277;
+		rType = 0;
+		vrLen = 801;
+		vrLoc = 949;
+	};
+	EC8959861001726B0009E0DF /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/taylan/Documents/Development/Personal/oggifier/build/Oggifier/Info.plist;
+		rLen = 0;
+		rLoc = 2147483647;
+	};
 	ECBDA5030FFE6C3700542CBD /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 089C165DFE840E0CC02AAC07 /* English */;
@@ -787,9 +834,9 @@
 	};
 	ECDE5FA00FFDA86900A6B1D4 /* MainWindowController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1168, 3400}}";
-			sepNavSelRange = "{1395, 0}";
-			sepNavVisRange = "{949, 752}";
+			sepNavIntBoundsRect = "{{0, 0}, {1168, 3332}}";
+			sepNavSelRange = "{1277, 0}";
+			sepNavVisRange = "{949, 801}";
 		};
 	};
 	ECF54D500FFDFEA10066796F /* PBXTextBookmark */ = {

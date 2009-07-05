@@ -1,0 +1,33 @@
+0.2.3 (July 5, 2009)
+====================
+
+* Fixed an issue with source path controller so drag and drop on the actual
+  field properly updates the output path now
+
+* * *
+
+0.2.2 (July 4, 2009)
+====================
+
+* Fixed a bug that was causing drag and drop to not set the source path
+* Added support for all QuickTime formats: mp4, 3g2, mov, m2v
+* Updated functionality so the output path is automatically set instead of
+  prompting user
+
+* * *
+
+0.2.1 (July 3, 2009)
+======================
+
+* Added proper about view credits
+* Fixed some memory issues
+
+* * *
+
+0.2.0 (July 3, 2009)
+======================
+
+* Initial release with basic functionality for converting files
+* Support for drag and drop
+* Ability to display time remaining
+* Smart guessing of file names and directory paths for the output
