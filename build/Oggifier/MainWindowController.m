@@ -37,11 +37,12 @@
 
 - (void)updateOutputPath {
 	[outputPath setURL:[NSURL fileURLWithPath:[[[[sourcePath URL] path] stringByDeletingPathExtension] stringByAppendingPathExtension:@"ogv"]]];
+	[convertButton setEnabled:YES];
 }
 
 - (void)assignSourcePath:(NSString *)path {
 	[sourcePath setURL:[NSURL fileURLWithPath:path]];
-	[self chooseOutputPath:nil];
+	[self updateOutputPath];
 }
 
 - (void)openPanelDidEnd:(NSOpenPanel*)panel returnCode:(int)returnCode contextInfo:(void *)contextInfo {
@@ -53,7 +54,6 @@
 	[sourcePath setURL:[[panel URLs] objectAtIndex:0]];
 	
 	[self updateOutputPath];
-	[convertButton setEnabled:YES];
 }
 
 - (IBAction)chooseSourcePath:(id)sender {
