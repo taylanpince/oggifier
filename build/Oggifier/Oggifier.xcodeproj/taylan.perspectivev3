@@ -230,6 +230,8 @@
 			<key>Layout</key>
 			<array>
 				<dict>
+					<key>BecomeActive</key>
+					<true/>
 					<key>ContentConfiguration</key>
 					<dict>
 						<key>PBXBottomSmartGroupGIDs</key>
@@ -279,8 +281,8 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>3</integer>
-									<integer>1</integer>
+									<integer>29</integer>
+									<integer>28</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -313,14 +315,12 @@
 					<key>Dock</key>
 					<array>
 						<dict>
-							<key>BecomeActive</key>
-							<true/>
 							<key>ContentConfiguration</key>
 							<dict>
 								<key>PBXProjectModuleGUID</key>
 								<string>ECF54D380FFDFBF00066796F</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainWindowController.m</string>
+								<string>PrefsWindowController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -328,11 +328,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>ECF54D390FFDFBF00066796F</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainWindowController.m</string>
+										<string>PrefsWindowController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>EC8959E010018BA00009E0DF</string>
+										<string>EC895A0E10019A940009E0DF</string>
 										<key>history</key>
 										<array>
 											<string>ECBDA6190FFEA7EB00542CBD</string>
@@ -343,10 +343,10 @@
 											<string>EC89595F10016F2A0009E0DF</string>
 											<string>EC89596010016F2A0009E0DF</string>
 											<string>EC89598A10017AD10009E0DF</string>
-											<string>EC89599C1001820F0009E0DF</string>
 											<string>EC89599D1001820F0009E0DF</string>
-											<string>EC8959CD100189080009E0DF</string>
-											<string>EC8959DF10018B9E0009E0DF</string>
+											<string>EC8959FA100198F80009E0DF</string>
+											<string>EC8959FB100198F80009E0DF</string>
+											<string>EC895A08100199180009E0DF</string>
 										</array>
 										<key>prevStack</key>
 										<array>
@@ -390,6 +390,8 @@
 											<string>EC8959A71001820F0009E0DF</string>
 											<string>EC8959C8100188A90009E0DF</string>
 											<string>EC8959CF100189080009E0DF</string>
+											<string>EC8959FC100198F80009E0DF</string>
+											<string>EC8959FD100198F80009E0DF</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>

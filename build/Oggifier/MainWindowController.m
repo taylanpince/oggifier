@@ -19,21 +19,10 @@
 	[progressIndicator setHidden:YES];
 	[convertButton setEnabled:NO];
 	[sourcePath setSubDelegate:self];
-	[[self window] makeKeyAndOrderFront:self];
-}
 
--(NSRect)newFrameForNewContentView:(NSView *)view {
-    NSWindow *window = [self window];
-    NSRect newFrameRect = [window frameRectForContentRect:[view frame]];
-    NSRect oldFrameRect = [window frame];
-    NSSize newSize = newFrameRect.size;
-    NSSize oldSize = oldFrameRect.size;
-    
-    NSRect frame = [window frame];
-    frame.size = newSize;
-    frame.origin.y -= (newSize.height - oldSize.height);
-    
-    return frame;
+	[self setShouldCascadeWindows:NO];
+	[[self window] setFrameAutosaveName:@"MainWindow"];
+	[[self window] makeKeyAndOrderFront:self];
 }
 
 - (void)updateOutputPath {

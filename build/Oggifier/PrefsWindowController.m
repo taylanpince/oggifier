@@ -12,6 +12,8 @@
 @implementation PrefsWindowController
 
 - (void)awakeFromNib {
+	[self setShouldCascadeWindows:NO];
+	[[self window] setFrameAutosaveName:@"PrefsWindow"];
 	[[self window] makeKeyAndOrderFront:self];
 }
 
