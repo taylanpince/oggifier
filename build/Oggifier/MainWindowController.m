@@ -7,6 +7,7 @@
 //
 
 #import "MainWindowController.h"
+#import "PrefsWindowController.h"
 
 
 @implementation MainWindowController
@@ -38,15 +39,21 @@
 - (void)updateOutputPath {
 	[outputPath setURL:[NSURL fileURLWithPath:[[[[sourcePath URL] path] stringByDeletingPathExtension] stringByAppendingPathExtension:@"ogv"]]];
 	[convertButton setEnabled:YES];
+	
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:@"auto_convert"] == YES)
+		[self startConversion:self];
 }
 
 - (void)assignSourcePath:(NSString *)path {
 	[sourcePath setURL:[NSURL fileURLWithPath:path]];
-	[self updateOutputPath];
 }
 
 - (void)didChangePathControl:(PathControl *)control toURL:(NSURL *)url {
-	[self updateOutputPath];
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:@"prompt_output"] == YES) {
+		[self chooseOutputPath:self];
+	} else {
+		[self updateOutputPath];
+	}
 }
 
 - (void)openPanelDidEnd:(NSOpenPanel*)panel returnCode:(int)returnCode contextInfo:(void *)contextInfo {
@@ -56,8 +63,6 @@
 		return;
 	
 	[sourcePath setURL:[[panel URLs] objectAtIndex:0]];
-	
-	[self updateOutputPath];
 }
 
 - (IBAction)chooseSourcePath:(id)sender {
@@ -85,9 +90,11 @@
 	
 	[outputPath	setURL:[panel URL]];
 
-	if ([sourcePath URL]) {
+	if ([sourcePath URL])
 		[convertButton setEnabled:YES];
-	}
+
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:@"auto_convert"] == YES)
+		[self startConversion:self];
 }
 
 - (IBAction)chooseOutputPath:(id)sender {
@@ -175,10 +182,20 @@
 	[progressIndicator stopAnimation:self];
 	
 	[statusLabel setTitleWithMnemonic:@"Done!"];
+	
+	if ([[NSUserDefaults standardUserDefaults] boolForKey:@"quit_complete"] == YES)
+		[[NSApplication sharedApplication] terminate:self];
 }
 
 - (IBAction)cancelConversion:(id)sender {
 	cancelled = YES;
+}
+
+- (IBAction)openPreferences:(id)sender {
+	PrefsWindowController *controller = [[PrefsWindowController alloc] init];
+	
+	[NSBundle loadNibNamed:@"PrefsWindow" owner:controller];
+	[controller release];
 }
 
 - (void)dealloc {

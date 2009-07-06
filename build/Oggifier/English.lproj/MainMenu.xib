@@ -9,7 +9,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="57"/>
-			<integer value="530"/>
+			<integer value="497"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -69,7 +69,7 @@
 								</object>
 								<object class="NSMenuItem" id="539193836">
 									<reference key="NSMenu" ref="110575045"/>
-									<string key="NSTitle">Check for Updates</string>
+									<string type="base64-UTF8" key="NSTitle">Q2hlY2sgZm9yIFVwZGF0ZXPigKY</string>
 									<string key="NSKeyEquiv"/>
 									<int key="NSMnemonicLoc">2147483647</int>
 									<reference key="NSOnImage" ref="35465992"/>
@@ -705,7 +705,7 @@
 			<object class="NSWindowTemplate" id="542085649">
 				<int key="NSWindowStyleMask">15</int>
 				<int key="NSWindowBacking">2</int>
-				<string key="NSWindowRect">{{196, 277}, {429, 233}}</string>
+				<string key="NSWindowRect">{{60, 565}, {429, 233}}</string>
 				<int key="NSWTFlags">536870912</int>
 				<string key="NSWindowTitle">Oggifier</string>
 				<string key="NSWindowClass">NSWindow</string>
@@ -1440,6 +1440,14 @@
 						<reference key="destination" ref="521814195"/>
 					</object>
 					<int key="connectionID">611</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">openPreferences:</string>
+						<reference key="source" ref="521814195"/>
+						<reference key="destination" ref="609285721"/>
+					</object>
+					<int key="connectionID">612</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -2533,7 +2541,7 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
-					<string>{{471, 577}, {218, 203}}</string>
+					<string>{{471, 577}, {232, 203}}</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<reference ref="9"/>
 					<string>{{23, 794}, {245, 183}}</string>
@@ -2594,7 +2602,7 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">611</int>
+			<int key="maxID">612</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -2621,10 +2629,12 @@
 							<string>cancelConversion:</string>
 							<string>chooseOutputPath:</string>
 							<string>chooseSourcePath:</string>
+							<string>openPreferences:</string>
 							<string>startConversion:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 							<string>id</string>
@@ -2648,7 +2658,7 @@
 							<string>NSButton</string>
 							<string>NSPathControl</string>
 							<string>NSProgressIndicator</string>
-							<string>NSPathControl</string>
+							<string>PathControl</string>
 							<string>NSTextField</string>
 						</object>
 					</object>
