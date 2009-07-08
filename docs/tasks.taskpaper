@@ -1,6 +1,6 @@
 Oggifier Tasks:
-- Add Preferences pane:
-	- Support automated conversion
-	- Optionally quit after finishing conversion
-	- Optionally prompt user for path after a source is selected
+- Add Preferences pane: @done
+	- Support automated conversion @done
+	- Optionally quit after finishing conversion @done
+	- Optionally prompt user for path after a source is selected @done
 - Add support for advanced options
